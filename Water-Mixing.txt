@@ -1,0 +1,17 @@
+n = int(input())
+
+for i in range(n):
+    a,b,x,y = [int(m) for m in input().split()]
+    d = a-b
+    if(d==0):
+        print("YES")
+    elif(d<0):
+        if(abs(d)<=x):
+            print("YES")
+        else:
+            print("NO")
+    else:
+        if(abs(d)<=y):
+            print("YES")
+        else:
+            print("NO")
